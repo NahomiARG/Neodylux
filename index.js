@@ -624,6 +624,7 @@ prefg = await fetchJson(`https://api.simsimi.net/v2/?text=${value}&lc=${cekBahas
  
 ▢ *Pregunta:* ${value}
 ▢ *Respuesta :* ${prefg.success}`) 
+break 
 
 case 'afk':
    if(!isGroup) return m.reply(msg.group)
