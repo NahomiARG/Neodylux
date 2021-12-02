@@ -623,7 +623,7 @@ prefg = await fetchJson(`https://api.simsimi.net/v2/?text=${value}&lc=${cekBahas
  m.reply(`≡ *PREGUNTAS*
  
 ▢ *Pregunta:* ${value}
-▢ *Respuesta :* ${prefg.success}`) 
+▢ *Respuesta :* ${prefg.success.replace('simsimi', 'DyLux').replace('Simsimi', 'DyLux').replace('sim simi', 'DyLux')}`) 
 break 
 
 case 'afk':
