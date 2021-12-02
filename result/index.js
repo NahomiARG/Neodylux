@@ -13,7 +13,6 @@ function pickRandom(list) {
 const { pinterest } = require('./download/pinterest_img');
 const { igDl } = require('./download/instagramPost_dl.js');
 const { Ttdl } = require('./download/tiktokPost_dl.js');
-const { joox } = require('./download/jooxDl.js');
 const { yta, ytv } = require('./download/yt_download');
 
 // -- resultados de búsqueda
@@ -49,8 +48,7 @@ module.exports = {
   pinterest,
   playstore,
   igDl,
-  Ttdl, 
-   joox,
+  Ttdl,
   yta,
   ytv
 };
