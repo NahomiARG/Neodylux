@@ -28,7 +28,7 @@ exports.menu = (v) => {
 ▢ ${v}toimg
 ▢ ${v}attp
 └─────────────
-┌─⊷ *PICTURE* 
+┌─⊷ *PICTURES* 
 ▢ ${v}pinterest
 ▢ ${v}imagen
 ▢ ${v}girl
@@ -51,7 +51,7 @@ exports.menu = (v) => {
 ▢ ${v}ytsearch
 ▢ ${v}google
 └─────────────
-┌─⊷ *DOWNLOAD* 
+┌─⊷ *DESCARGA* 
 ▢ ${v}play
 ▢ ${v}play2
 ▢ ${v}playvid
@@ -119,7 +119,7 @@ exports.menu = (v) => {
 ▢ ${v}profile
 ▢ ${v}invite <549xxxx> 
 └─────────────
-┌─⊷ *OWNER* 
+┌─⊷ *DUEÑO BOT* 
 ▢ ${v}addpremium @user
 ▢ ${v}delpremium @user
 ▢ ${v}ban @user
@@ -132,6 +132,6 @@ exports.menu = (v) => {
 ▢ ${v}setprefix
 ▢ ${v}listreport
 ▢ $
-▢ >
+
 └─────────────`;
 };
