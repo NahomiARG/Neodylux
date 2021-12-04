@@ -188,7 +188,7 @@ module.exports = Fg = async (Fg, mek) => {
     mek = mek.messages.all()[0];
     if (!mek.message) return;
     //--Bot self
-  if(mek.key.fromMe) return; // Eliminalo para que el Bot sea self
+  if(mek
    
     if (mek.key && mek.key.remoteJid == 'status@broadcast') return;
     mek.message = (Object.keys(mek.message)[0] === 'ephemeralMessage') ? mek.message.ephemeralMessage.message : mek.message
@@ -523,11 +523,11 @@ case 'lang':
 case 'creator':
 case 'creador': 
 case 'developer':
-number = '59172945992@s.whatsapp.net'
+number = '5491158051406@s.whatsapp.net'
     capt = `▢ ${msg.num} : @${number.split('@')[0]}\n\n`
     capt += '▢ Instagram : https://www.instagram.com/fg98._'
     await Fg.fakeLink(from, capt, thumbfg, `${msg.click}`, 'https://www.instagram.com/fg98._', mek)
-   /* Fg.sendContact(from, '59172945992', 'owner', {
+   /* Fg.sendContact(from, '5491158051406', 'owner', {
 	 key: {
           fromMe: false,
 	      participant: `0@s.whatsapp.net`, ...(from ? 
@@ -569,7 +569,7 @@ number = '59172945992@s.whatsapp.net'
 
 *≡ OWNER*
 ▢ Instagram : https://www.instagram.com/fg98._
-▢ WhatsApp : wa.me/59172945992 
+▢ WhatsApp : wa.me/5491158051406 
 
 *≡ SCRIPT*
 ▢ Git : ${package.homepage} 
