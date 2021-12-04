@@ -455,7 +455,7 @@ ${msg.hi} *${pushname}* ${ucapanWaktu}
 ${readMore}
 ${menu(prefix)} 
 `
-    Fg.send3ButtonLoc(from, thumbfg, capt, `▢ *DyLux  ┃ ᴮᴼᵀ*\n▢ *Total Hits* : ${isTotalcmd}\n▢ *Usuarios* : ${User.length}\n▢ *Runtime* : ${kyun(process.uptime())}\n\n${msg.foll}`, '✆ Owner', `${prefix}owner`, '⏍ Info', `${prefix}info`, `⌬ ${msg.gp}s`, `${prefix}grupos`)
+    Fg.send3ButtonLoc(from, thumbfg, capt, `▢ *NeoNazi™  ┃ ᴮᴼᵀ*\n▢ *Total Hits* : ${isTotalcmd}\n▢ *Usuarios* : ${User.length}\n▢ *Runtime* : ${kyun(process.uptime())}\n\n${msg.foll}`, '✆ Owner', `${prefix}owner`, '⏍ Info', `${prefix}info`, `⌬ ${msg.gp}s`, `${prefix}grupos`)
     break
     
     case 'grupos': 
@@ -1037,7 +1037,7 @@ break
 		            ytresult += '*⏳ Duración* : ' + video.timestamp + '\n'
 		            ytresult += '*📤 Publicado* : ' + video.ago + '\n________________________\n\n'
 		    		});
-		    		ytresult += '─── DyLux ┃ ᴮᴼᵀ ───'
+		    		ytresult += '─── NeoNazi™ ┃ ᴮᴼᵀ ───'
 		    		 Fg.sendMessage(from, tbuff, image, {thumbnail:fakethumb , quoted: mek, caption: ytresult})
 		            break
    
