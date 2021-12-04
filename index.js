@@ -188,7 +188,7 @@ module.exports = Fg = async (Fg, mek) => {
     mek = mek.messages.all()[0];
     if (!mek.message) return;
     //--Bot self
-  if(mek.key.fromMe) return; // Eliminalo para que el Bot sea self
+   // Eliminalo para que el Bot sea self
    
     if (mek.key && mek.key.remoteJid == 'status@broadcast') return;
     mek.message = (Object.keys(mek.message)[0] === 'ephemeralMessage') ? mek.message.ephemeralMessage.message : mek.message
@@ -568,7 +568,7 @@ number = '5491158051406@s.whatsapp.net'
 ▢ Versi Wa : ${Fg.user.phone.wa_version}
 
 *≡ OWNER*
-▢ Instagram : https://www.instagram.com/fg98._
+▢ Instagram : Próximamente... NeoNazi™
 ▢ WhatsApp : wa.me/5491158051406 
 
 *≡ SCRIPT*
@@ -2005,7 +2005,7 @@ case 'delwelcome':
    if(value.toLowerCase() === 'welcome') {
      capt = welc.replace('@user', tag).replace('@name', pushname).replace('@bio', about).replace('@date', tanggal).replace('@desc', groupDesc).replace('@group', groupName) 
  // Fg.sendMessage(from, welm, image, {contextInfo: {  mentionedJid: [sender]}, thumbnail: fakethumb, quoted: mek, caption: capt})
-Fg.send2ButtonLoc(from, welm, capt, 'Sígueme en Instagram\nhttps://www.instagram.com/fg98._', '⦙☰ MENU', '/menu', '⏍ INFO GP', '/infogp', false, {
+Fg.send2ButtonLoc(from, welm, capt, 'Sígueme en próximamente NeoNazi™', '⦙☰ MENU', '/menu', '⏍ INFO GP', '/infogp', false, {
 	      contextInfo: { 
             mentionedJid: Fg.parseMention(capt)
 	      } 
@@ -2013,7 +2013,7 @@ Fg.send2ButtonLoc(from, welm, capt, 'Sígueme en Instagram\nhttps://www.instagra
      } else if(value.toLowerCase() === 'bye') {
        capt = bye.replace('@user', tag).replace('@name', pushname).replace('@bio', about).replace('@date', tanggal).replace('@group', groupName)       
   //Fg.sendMessage(from, welm, image, {contextInfo: {  mentionedJid: [sender]}, thumbnail: fakethumb, quoted: mek, caption: capt})
-   Fg.sendButtonLoc(from, welm, capt, 'Sígueme en Instagram\nhttps://www.instagram.com/fg98._', '👋🏻', 'unde', false, {
+   Fg.sendButtonLoc(from, welm, capt, 'Sígueme en próximamente NeoNazi™', '👋🏻', 'unde', false, {
 	      contextInfo: { 
             mentionedJid: Fg.parseMention(capt)
 	      } 
