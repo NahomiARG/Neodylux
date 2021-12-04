@@ -525,8 +525,8 @@ case 'creador':
 case 'developer':
 number = '5491158051406@s.whatsapp.net'
     capt = `▢ ${msg.num} : @${number.split('@')[0]}\n\n`
-    capt += '▢ Instagram : https://www.instagram.com/fg98._'
-    await Fg.fakeLink(from, capt, thumbfg, `${msg.click}`, 'https://www.instagram.com/fg98._', mek)
+    capt += '▢ Instagram : Próximamente... NeoNazi™'
+    await Fg.fakeLink(from, capt, thumbfg, `${msg.click}`, 'NeoNazi™', mek)
    /* Fg.sendContact(from, '5491158051406', 'owner', {
 	 key: {
           fromMe: false,
