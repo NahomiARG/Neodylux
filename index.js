@@ -568,7 +568,7 @@ number = '5491158051406@s.whatsapp.net'
 ▢ Versi Wa : ${Fg.user.phone.wa_version}
 
 *≡ OWNER*
-▢ Instagram : https://www.instagram.com/fg98._
+▢ Instagram : *Próximamente...*
 ▢ WhatsApp : wa.me/5491158051406 
 
 *≡ SCRIPT*
@@ -1063,7 +1063,7 @@ break
    msg = resgl.map(({ title, link, snippet}) => {
     return `*${title}*\n${link}\n${snippet}`
   }).join`\n\n`
-   await Fg.adReply(from, msg, text, ' BÚSQUEDA DE GOOGLE : ' + value, tanggal, thumbfg, 'https://www.instagram.com/fg98._')
+   await Fg.adReply(from, msg, text, ' BÚSQUEDA DE GOOGLE : ' + value, tanggal, thumbfg, 'NeoNazi™')
    break
    
    case 'igvid':
@@ -2005,7 +2005,7 @@ case 'delwelcome':
    if(value.toLowerCase() === 'welcome') {
      capt = welc.replace('@user', tag).replace('@name', pushname).replace('@bio', about).replace('@date', tanggal).replace('@desc', groupDesc).replace('@group', groupName) 
  // Fg.sendMessage(from, welm, image, {contextInfo: {  mentionedJid: [sender]}, thumbnail: fakethumb, quoted: mek, caption: capt})
-Fg.send2ButtonLoc(from, welm, capt, 'Sígueme en Instagram\nhttps://www.instagram.com/fg98._', '⦙☰ MENU', '/menu', '⏍ INFO GP', '/infogp', false, {
+Fg.send2ButtonLoc(from, welm, capt, 'Sígueme en Próximamente... NeoNazi™', '⦙☰ MENU', '/menu', '⏍ INFO GP', '/infogp', false, {
 	      contextInfo: { 
             mentionedJid: Fg.parseMention(capt)
 	      } 
@@ -2013,7 +2013,7 @@ Fg.send2ButtonLoc(from, welm, capt, 'Sígueme en Instagram\nhttps://www.instagra
      } else if(value.toLowerCase() === 'bye') {
        capt = bye.replace('@user', tag).replace('@name', pushname).replace('@bio', about).replace('@date', tanggal).replace('@group', groupName)       
   //Fg.sendMessage(from, welm, image, {contextInfo: {  mentionedJid: [sender]}, thumbnail: fakethumb, quoted: mek, caption: capt})
-   Fg.sendButtonLoc(from, welm, capt, 'Sígueme en Instagram\nhttps://www.instagram.com/fg98._', '👋🏻', 'unde', false, {
+   Fg.sendButtonLoc(from, welm, capt, 'Sígueme en Próximamente... NeoNazi™', '👋🏻', 'unde', false, {
 	      contextInfo: { 
             mentionedJid: Fg.parseMention(capt)
 	      } 
