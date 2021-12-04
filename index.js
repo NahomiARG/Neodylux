@@ -188,7 +188,7 @@ module.exports = Fg = async (Fg, mek) => {
     mek = mek.messages.all()[0];
     if (!mek.message) return;
     //--Bot self
-   // Eliminalo para que el Bot sea self
+  if(mek.key.fromMe) return; // Eliminalo para que el Bot sea self
    
     if (mek.key && mek.key.remoteJid == 'status@broadcast') return;
     mek.message = (Object.keys(mek.message)[0] === 'ephemeralMessage') ? mek.message.ephemeralMessage.message : mek.message
@@ -446,7 +446,7 @@ switch (command) {
  
   case 'menu': 
  case 'help':
-    capt = `────  *NeoNazi™  ┃ ᴮᴼᵀ*  ────
+    capt = `────  *DyLux  ┃ ᴮᴼᵀ*  ────
     
 ${msg.hi} *${pushname}* ${ucapanWaktu}
     
@@ -455,23 +455,23 @@ ${msg.hi} *${pushname}* ${ucapanWaktu}
 ${readMore}
 ${menu(prefix)} 
 `
-    Fg.send3ButtonLoc(from, thumbfg, capt, `▢ *NeoNazi™  ┃ ᴮᴼᵀ*\n▢ *Total Hits* : ${isTotalcmd}\n▢ *Usuarios* : ${User.length}\n▢ *Runtime* : ${kyun(process.uptime())}\n\n${msg.foll}`, '✆ Owner', `${prefix}owner`, '⏍ Info', `${prefix}info`, `⌬ ${msg.gp}s`, `${prefix}grupos`)
+    Fg.send3ButtonLoc(from, thumbfg, capt, `▢ *DyLux  ┃ ᴮᴼᵀ*\n▢ *Total Hits* : ${isTotalcmd}\n▢ *Usuarios* : ${User.length}\n▢ *Runtime* : ${kyun(process.uptime())}\n\n${msg.foll}`, '✆ Owner', `${prefix}owner`, '⏍ Info', `${prefix}info`, `⌬ ${msg.gp}s`, `${prefix}grupos`)
     break
     
     case 'grupos': 
     case 'groups': 
     case 'dylux': 
     gps = `
-≡  *NeoNazi™  ┃ ᴮᴼᵀ*  GRUPOS
+≡  *DyLux  ┃ ᴮᴼᵀ*  GRUPOS
 
 ▢ ${msg.gp} 1
-Próximamente... NeoNazi™
+https://chat.whatsapp.com/G5sXrkhJ0pb0Tu8nhWLaFK
 
+▢ ${msg.gp} 2
+https://chat.whatsapp.com/CDUqNRu5Kh5KY5uqQI0BKE
 
-
-
-
-
+▢ ${msg.gp} 3
+https://chat.whatsapp.com/FSVDTytQxnTIPx8t8wBWeM
 
 ▢ *YouTube*
 • https://www.youtube.com/fg98f
@@ -525,8 +525,8 @@ case 'creador':
 case 'developer':
 number = '5491158051406@s.whatsapp.net'
     capt = `▢ ${msg.num} : @${number.split('@')[0]}\n\n`
-    capt += '▢ Instagram : Próximamente... NeoNazi™'
-    await Fg.fakeLink(from, capt, thumbfg, `${msg.click}`, 'NeoNazi™', mek)
+    capt += '▢ Instagram : https://www.instagram.com/fg98._'
+    await Fg.fakeLink(from, capt, thumbfg, `${msg.click}`, 'https://www.instagram.com/fg98._', mek)
    /* Fg.sendContact(from, '5491158051406', 'owner', {
 	 key: {
           fromMe: false,
@@ -568,7 +568,7 @@ number = '5491158051406@s.whatsapp.net'
 ▢ Versi Wa : ${Fg.user.phone.wa_version}
 
 *≡ OWNER*
-▢ Instagram : *Próximamente...*
+▢ Instagram : https://www.instagram.com/fg98._
 ▢ WhatsApp : wa.me/5491158051406 
 
 *≡ SCRIPT*
@@ -1037,7 +1037,7 @@ break
 		            ytresult += '*⏳ Duración* : ' + video.timestamp + '\n'
 		            ytresult += '*📤 Publicado* : ' + video.ago + '\n________________________\n\n'
 		    		});
-		    		ytresult += '─── NeoNazi™ ┃ ᴮᴼᵀ ───'
+		    		ytresult += '─── DyLux ┃ ᴮᴼᵀ ───'
 		    		 Fg.sendMessage(from, tbuff, image, {thumbnail:fakethumb , quoted: mek, caption: ytresult})
 		            break
    
@@ -1063,7 +1063,7 @@ break
    msg = resgl.map(({ title, link, snippet}) => {
     return `*${title}*\n${link}\n${snippet}`
   }).join`\n\n`
-   await Fg.adReply(from, msg, text, ' BÚSQUEDA DE GOOGLE : ' + value, tanggal, thumbfg, 'NeoNazi™')
+   await Fg.adReply(from, msg, text, ' BÚSQUEDA DE GOOGLE : ' + value, tanggal, thumbfg, 'https://www.instagram.com/fg98._')
    break
    
    case 'igvid':
@@ -2005,7 +2005,7 @@ case 'delwelcome':
    if(value.toLowerCase() === 'welcome') {
      capt = welc.replace('@user', tag).replace('@name', pushname).replace('@bio', about).replace('@date', tanggal).replace('@desc', groupDesc).replace('@group', groupName) 
  // Fg.sendMessage(from, welm, image, {contextInfo: {  mentionedJid: [sender]}, thumbnail: fakethumb, quoted: mek, caption: capt})
-Fg.send2ButtonLoc(from, welm, capt, 'Sígueme en Próximamente... NeoNazi™', '⦙☰ MENU', '/menu', '⏍ INFO GP', '/infogp', false, {
+Fg.send2ButtonLoc(from, welm, capt, 'Sígueme en Instagram\nhttps://www.instagram.com/fg98._', '⦙☰ MENU', '/menu', '⏍ INFO GP', '/infogp', false, {
 	      contextInfo: { 
             mentionedJid: Fg.parseMention(capt)
 	      } 
@@ -2013,7 +2013,7 @@ Fg.send2ButtonLoc(from, welm, capt, 'Sígueme en Próximamente... NeoNazi™', '
      } else if(value.toLowerCase() === 'bye') {
        capt = bye.replace('@user', tag).replace('@name', pushname).replace('@bio', about).replace('@date', tanggal).replace('@group', groupName)       
   //Fg.sendMessage(from, welm, image, {contextInfo: {  mentionedJid: [sender]}, thumbnail: fakethumb, quoted: mek, caption: capt})
-   Fg.sendButtonLoc(from, welm, capt, 'Sígueme en Próximamente... NeoNazi™', '👋🏻', 'unde', false, {
+   Fg.sendButtonLoc(from, welm, capt, 'Sígueme en Instagram\nhttps://www.instagram.com/fg98._', '👋🏻', 'unde', false, {
 	      contextInfo: { 
             mentionedJid: Fg.parseMention(capt)
 	      } 
